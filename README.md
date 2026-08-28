@@ -8,6 +8,18 @@ Offline, deterministic proof-of-architecture for confidence-aware vehicle dead r
 python -m backend.demo
 ```
 
+## IO-VNBD real-data baseline
+
+The repository does not contain benchmark payloads. Clone the official upstream with Git LFS and pull selected synchronized route pairs, then train with vehicle odometry used only as a label:
+
+```powershell
+git clone https://github.com/onyekpeu/IO-VNBD.git IO-VNBD-upstream
+git -C IO-VNBD-upstream lfs pull --include="Synchronised V abd S datasets/Categorised IOVNB Dataset/S (Driver A)/S1/*.csv,Synchronised V abd S datasets/Categorised IOVNB Dataset/S (Driver A)/S2/*.csv"
+python -m backend.train --iovnbd-root "IO-VNBD-upstream/Synchronised V abd S datasets/Categorised IOVNB Dataset" --epochs 20
+```
+
+The IO-VNBD adapter uses only phone accelerometer/gyroscope fields as inputs and vehicle speed as supervision. It holds out a complete route for validation. Initial short-run results are a baseline only; do not claim real-world readiness until multi-route, cross-driver evaluation and outage metrics are completed.
+
 ## Run the integrated UI
 
 ```powershell

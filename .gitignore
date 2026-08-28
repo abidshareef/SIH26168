@@ -12,6 +12,7 @@ outputs/
 
 # Large external benchmark data (obtain separately with Git LFS)
 IO-VNBD-master/
+IO-VNBD-upstream/
 
 # Editor and OS files
 .vscode/
