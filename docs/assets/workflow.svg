@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
+<title id="title">NavIQ GNSS outage workflow</title><desc id="desc">Continuous transition from GNSS-assisted navigation to dead reckoning and back.</desc>
+<rect width="1400" height="430" rx="24" fill="#0f172a"/>
+<text x="700" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Seamless GNSS ↔ Dead-Reckoning Workflow</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="55" y="145" width="230" height="100" rx="18" fill="#111827" stroke="#64748b" stroke-width="2"/><text x="170" y="185" font-size="21" font-weight="700" fill="#fff">GNSS + INS</text><text x="170" y="215" font-size="16" fill="#94a3b8">normal navigation</text>
+<rect x="370" y="145" width="230" height="100" rx="18" fill="#111827" stroke="#64748b" stroke-width="2"/><text x="485" y="185" font-size="21" font-weight="700" fill="#fff">Outage Detector</text><text x="485" y="215" font-size="16" fill="#94a3b8">quality drops / loss</text>
+<rect x="685" y="145" width="230" height="100" rx="18" fill="#172554" stroke="#60a5fa" stroke-width="2"/><text x="800" y="185" font-size="21" font-weight="700" fill="#bfdbfe">Dead Reckoning</text><text x="800" y="215" font-size="16" fill="#93c5fd">AI + IMU + map</text>
+<rect x="1000" y="145" width="230" height="100" rx="18" fill="#111827" stroke="#64748b" stroke-width="2"/><text x="1115" y="185" font-size="21" font-weight="700" fill="#fff">GNSS Reacquired</text><text x="1115" y="215" font-size="16" fill="#94a3b8">innovation gate</text>
+<rect x="1130" y="300" width="230" height="70" rx="18" fill="#172554" stroke="#60a5fa" stroke-width="2"/><text x="1245" y="342" font-size="19" font-weight="700" fill="#bfdbfe">Adaptive Re-Fusion</text>
+</g>
+<g stroke="#60a5fa" stroke-width="4" fill="none"><path d="M285 195H370M600 195H685M915 195H1000M1115 245V300"/><path d="M355 185l15 10-15 10M670 185l15 10-15 10M985 185l15 10-15 10M1105 290l10 10 10-10"/></g>
+<text x="700" y="405" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#94a3b8">The navigation state continues while GNSS is unavailable and gradually trusts GNSS again after recovery.</text>
+</svg>
