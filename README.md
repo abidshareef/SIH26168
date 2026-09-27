@@ -4,14 +4,14 @@
   <img src="docs/assets/hero.svg" alt="NavIQ — AI-ML Intelligent Dead Reckoning" width="100%">
 </a>
 
-# 🛰️ NavIQ
+# 🛰️ AION
 
 ### AI-ML Intelligent Dead Reckoning for Seamless Navigation
 
 **SIH 2026 · Problem Statement 26168 · ISRO**
 
 <p>
-  <a href="#-what-the-judge-can-see">What the judge can see</a> ·
+ 
   <a href="#-how-it-works">How it works</a> ·
   <a href="#-live-demo">Live demo</a> ·
   <a href="#-evaluation">Evaluation</a> ·
@@ -29,9 +29,9 @@
 
 ---
 
-## ⚡ 30-second judge summary
+##  Summary
 
-> **NavIQ turns a smartphone into an intelligent dead-reckoning navigator that continues estimating vehicle position when GNSS disappears.**
+> **AION turns a smartphone into an intelligent dead-reckoning navigator that continues estimating vehicle position when GNSS disappears.**
 
 Instead of treating GNSS loss as a navigation failure, NavIQ switches to a **confidence-aware IMU + AI + navigation-fusion pipeline**, uses learned motion information to constrain inertial drift, and applies road/vehicle constraints before gradually trusting GNSS again after recovery.
 
@@ -67,7 +67,7 @@ Use **smartphone inertial sensors + AI/ML + GNSS/INS fusion** to maintain naviga
 
 ---
 
-## 👀 What the judge can see
+## Workflow
 
 ### 1. Start in normal navigation
 
@@ -117,7 +117,7 @@ The important visual is not merely a moving marker. It is **trajectory continuit
 
 ---
 
-# 🧠 How it works
+#  How it works
 
 <img src="docs/assets/architecture.svg" alt="NavIQ system architecture" width="100%">
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ---
 
-# 🔄 Seamless GNSS ↔ Dead Reckoning
+# Seamless GNSS ↔ Dead Reckoning
 
 <img src="docs/assets/workflow.svg" alt="GNSS outage and recovery workflow" width="100%">
 
@@ -174,7 +174,7 @@ IMU ─────────►│ Fusion     │──────►│ Dea
 
 ---
 
-# 🤖 AI/ML pipeline
+#  AI/ML pipeline
 
 ```mermaid
 flowchart TD
@@ -574,10 +574,10 @@ Recommended research references to attach before final submission:
 
 | Member | Responsibility |
 |---|---|
-| **[MEMBER 1]** | AI/ML + navigation |
-| **[MEMBER 2]** | mobile application |
-| **[MEMBER 3]** | backend + edge engine |
-| **[MEMBER 4]** | research + evaluation |
+| **ABID** | AI/ML + navigation |
+| **ZAID** | mobile application |
+| **ABRAAR** | backend + edge engine |
+| **RAYYAN** | research + evaluation |
 
 ---
 
@@ -598,7 +598,7 @@ Recommended research references to attach before final submission:
 
 ## 🛰️ When GNSS disappears, navigation shouldn't.
 
-### **NavIQ — Intelligent Dead Reckoning for Seamless Navigation**
+### **AION — Intelligent Dead Reckoning for Seamless Navigation**
 
 **SIH 2026 · Problem Statement 26168 · ISRO**
 
