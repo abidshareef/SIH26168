@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">NavIQ system architecture</title><desc id="desc">Sensor, AI, fusion, constraints and navigation layers.</desc>
+<rect width="1400" height="760" rx="24" fill="#f8fafc"/>
+<text x="700" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#0f172a">NavIQ System Architecture</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<g><rect x="90" y="110" width="240" height="110" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="210" y="150" font-size="22" font-weight="700" fill="#0f172a">Sensor Layer</text><text x="210" y="181" font-size="17" fill="#475569">IMU • GNSS • Magnetometer</text></g>
+<g><rect x="400" y="110" width="240" height="110" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="520" y="150" font-size="22" font-weight="700" fill="#0f172a">Preprocessing</text><text x="520" y="181" font-size="17" fill="#475569">Windows • filtering • alignment</text></g>
+<g><rect x="710" y="110" width="240" height="110" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="830" y="150" font-size="22" font-weight="700" fill="#0f172a">AI Motion</text><text x="830" y="181" font-size="17" fill="#475569">TCN • velocity • uncertainty</text></g>
+<g><rect x="1020" y="110" width="290" height="110" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="1165" y="150" font-size="22" font-weight="700" fill="#0f172a">GNSS Quality</text><text x="1165" y="181" font-size="17" fill="#475569">outage detection • recovery</text></g>
+<g><rect x="270" y="330" width="860" height="135" rx="22" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/><text x="700" y="375" font-size="26" font-weight="700" fill="#0c4a6e">Navigation Fusion Core</text><text x="700" y="411" font-size="18" fill="#075985">Strapdown INS • error-state estimation • confidence-aware covariance</text><text x="700" y="440" font-size="18" fill="#075985">GNSS correction when trusted • AI velocity correction during outage</text></g>
+<g><rect x="270" y="555" width="250" height="100" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="395" y="595" font-size="21" font-weight="700" fill="#0f172a">Map Matching</text><text x="395" y="625" font-size="16" fill="#475569">road geometry constraints</text></g>
+<g><rect x="575" y="555" width="250" height="100" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="700" y="595" font-size="21" font-weight="700" fill="#0f172a">NHC</text><text x="700" y="625" font-size="16" fill="#475569">vehicle kinematic constraint</text></g>
+<g><rect x="880" y="555" width="250" height="100" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="2"/><text x="1005" y="595" font-size="21" font-weight="700" fill="#0f172a">Navigation Output</text><text x="1005" y="625" font-size="16" fill="#475569">position • velocity • confidence</text></g>
+</g>
+<g stroke="#64748b" stroke-width="3" fill="none"><path d="M330 165H400M640 165H710M950 165H1020M830 220V330M520 220V330M1165 220V330M520 465V555M700 465V555M880 465V555"/></g>
+</svg>
