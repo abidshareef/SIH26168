@@ -20,7 +20,8 @@ function render(s){
   $('coordinates').textContent=`${s.latitude.toFixed(5)}, ${s.longitude.toFixed(5)}`;$('gnss-sensor').textContent=trust.gnss_confidence===0?'LOST':'ACTIVE';$('vehicle').style.transform=`rotate(${s.heading}deg)`;
   $('metric-uncertainty').textContent=`±${s.position_uncertainty.toFixed(1)} m`;$('metric-gnss').textContent=pct(trust.gnss_confidence);$('metric-ai').textContent=pct(trust.ai_confidence);
   const vals=[trust.imu_confidence,trust.nhc_confidence,trust.map_confidence,trust.mount_confidence];$('metric-fusion').textContent=pct(vals.reduce((a,b)=>a+b,0)/vals.length);
-  $('trust').innerHTML=Object.entries(labels).map(([k,label])=>{const v=trust[k]??0;return `<div class="trust-row ${v<.4?'low':''}"><span>${label}</span><div class="bar"><i style="width:${v*100}%"></i></div><b>${pct(v)}</b></div>`}).join('');
+  $('trust').innerHTML=Object.entries(labels).map(([k,label])=>`<div class="trust-row ${(trust[k]??0)<.4?'low':''}"><span>${label}</span><div class="bar"><i></i></div><b>${pct(trust[k]??0)}</b></div>`).join('');
+  [...$('trust').querySelectorAll('.trust-row')].forEach((row,i)=>{row.querySelector('.bar i').style.width=`${Math.max(0,Math.min(1,trust[Object.keys(labels)[i]]??0))*100}%`});
   const outage=s.mode==='DEAD_RECKONING';$('warning').textContent=outage?'GNSS SIGNAL LOST — DEAD RECKONING ACTIVE':s.mode==='RECOVERY'?'GNSS RETURNED — INNOVATION CHECK IN PROGRESS':'';$('warning').classList.toggle('hidden',!outage&&s.mode!=='RECOVERY');$('notice').textContent=s.simulation_note||'Backend state synchronized.';
 }
 
