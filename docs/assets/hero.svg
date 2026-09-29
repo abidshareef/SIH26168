@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
-<title id="title">NavIQ — Intelligent Dead Reckoning</title>
-<desc id="desc">Smartphone sensors feed AI motion estimation and GNSS INS fusion to maintain navigation through GNSS outages.</desc>
+<title id="title">NAV-AION — Intelligent Dead Reckoning</title>
+<desc id="desc">NAV-AION uses smartphone sensors, AI motion estimation, GNSS-INS fusion, map constraints and confidence-aware recovery to maintain navigation through GNSS outages.</desc>
 <rect width="1400" height="520" rx="28" fill="#0b1220"/>
 <g fill="none" stroke="#334155" stroke-width="2" opacity=".55"><path d="M0 390H1400M0 130H1400M350 0V520M700 0V520M1050 0V520"/></g>
-<text x="80" y="120" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">NavIQ</text>
-<text x="80" y="168" fill="#94a3b8" font-family="Arial,sans-serif" font-size="28">AI-ML Intelligent Dead Reckoning</text>
-<text x="80" y="205" fill="#64748b" font-family="Arial,sans-serif" font-size="22">SIH 2026 • Problem Statement 26168</text>
+<text x="80" y="112" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">NAV-AION</text>
+<text x="80" y="160" fill="#94a3b8" font-family="Arial,sans-serif" font-size="27">AI-Powered Intelligent Dead Reckoning</text>
+<text x="80" y="198" fill="#64748b" font-family="Arial,sans-serif" font-size="21">SIH 2026 • Problem Statement 26168 • ISRO</text>
 <g font-family="Arial,sans-serif" font-size="20" font-weight="600" text-anchor="middle">
 <rect x="70" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="175" y="325" fill="#e2e8f0">SMARTPHONE</text><text x="175" y="353" fill="#94a3b8" font-size="16">IMU + GNSS</text>
 <rect x="350" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="455" y="325" fill="#e2e8f0">AI MOTION</text><text x="455" y="353" fill="#94a3b8" font-size="16">Velocity + confidence</text>
-<rect x="630" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="735" y="325" fill="#e2e8f0">FUSION CORE</text><text x="735" y="353" fill="#94a3b8" font-size="16">INS + ESKF concepts</text>
-<rect x="910" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="1015" y="325" fill="#e2e8f0">MAP + NHC</text><text x="1015" y="353" fill="#94a3b8" font-size="16">Road constraints</text>
+<rect x="630" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="735" y="325" fill="#e2e8f0">FUSION CORE</text><text x="735" y="353" fill="#94a3b8" font-size="16">INS + error-state</text>
+<rect x="910" y="285" width="210" height="90" rx="18" fill="#111827" stroke="#475569"/><text x="1015" y="325" fill="#e2e8f0">MAP + NHC</text><text x="1015" y="353" fill="#94a3b8" font-size="16">Vehicle constraints</text>
 <rect x="1190" y="285" width="140" height="90" rx="18" fill="#172554" stroke="#60a5fa"/><text x="1260" y="325" fill="#bfdbfe">LIVE</text><text x="1260" y="353" fill="#93c5fd" font-size="16">POSITION</text>
 </g>
 <g stroke="#60a5fa" stroke-width="4" fill="none"><path d="M280 330H350M560 330H630M840 330H910M1120 330H1190"/><path d="M335 320l15 10-15 10M615 320l15 10-15 10M895 320l15 10-15 10M1175 320l15 10-15 10"/></g>
-<text x="80" y="450" fill="#64748b" font-family="Arial,sans-serif" font-size="18">GNSS lost? Navigation continues with learned motion + inertial state propagation + confidence-aware fusion.</text>
+<text x="80" y="450" fill="#64748b" font-family="Arial,sans-serif" font-size="18">GNSS lost? NAV-AION continues navigation using learned motion, inertial propagation and confidence-aware fusion.</text>
 </svg>
