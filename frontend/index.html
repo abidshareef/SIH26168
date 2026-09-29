@@ -1,7 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NAV-AION | Intelligent Dead Reckoning</title><link rel="stylesheet" href="/ui/style.css"></head>
-<body><main class="shell">
+<body>
+<div id="auth-gate" class="auth-gate">
+  <form id="auth-form" class="auth-card">
+    <p class="eyebrow">NAV-AION SECURE DEMO</p>
+    <h1>Authenticate</h1>
+    <p>Enter the demo API key configured on the NAV-AION backend. The key is kept in session memory and sent only as a Bearer token.</p>
+    <label for="api-key">API key</label>
+    <input id="api-key" name="api-key" type="password" autocomplete="off" required minlength="16" placeholder="NAV_AION_API_KEY">
+    <button type="submit">Connect to NAV-AION</button>
+    <p id="auth-error" class="auth-error" aria-live="polite"></p>
+  </form>
+</div>
+<main id="app-shell" class="shell hidden-app">
 <header class="topbar"><div><p class="eyebrow">SIH 26168 / ISRO</p><h1>NAV-AION</h1><p class="subtitle">AI-powered intelligent dead reckoning for seamless GNSS-denied navigation.</p></div><div class="status-stack"><div id="connection" class="connection">CONNECTING</div><div class="product-tag">NAVIGATE BEYOND THE SIGNAL</div></div></header>
 <section class="hero-grid"><article class="map-card panel"><div class="panel-head"><div><p class="eyebrow">LIVE NAVIGATION</p><h2>Trajectory monitor</h2></div><span id="mode-chip" class="chip">INITIALIZING</span></div><div class="map-stage"><div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div><div class="route-line"></div><div class="route-line secondary-route"></div><span class="map-node node-start">START</span><span class="map-node node-outage">GNSS OUTAGE</span><div id="vehicle" class="vehicle">▲</div><div class="map-legend"><span><i class="dot reference"></i>Reference</span><span><i class="dot estimated"></i>NAV-AION</span></div><div id="coordinates" class="coordinates">Awaiting navigation state</div></div><div id="warning" class="warning hidden"></div></article>
 <article class="mode-panel panel"><p class="eyebrow">NAVIGATION STATE</p><h2 id="mode">—</h2><div class="speed"><span id="speed">—</span><small>km/h</small></div><div class="stat-grid"><div><span>Heading</span><strong id="heading">—</strong></div><div><span>Uncertainty</span><strong id="uncertainty">—</strong></div><div><span>Velocity variance</span><strong id="variance">—</strong></div><div><span>State timestamp</span><strong id="timestamp">—</strong></div></div></article></section>
